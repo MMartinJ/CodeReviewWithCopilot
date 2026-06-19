@@ -35,3 +35,15 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+# generate test cases for the add_two_numbers function
+
+
+def test_add_two_numbers():
+    assert add_two_numbers(1, 2) == 3
+    assert add_two_numbers(-1, 1) == 0
+    assert add_two_numbers(0, 0) == 0
+    assert add_two_numbers(1.5, 2.5) == 4.0
+    assert add_two_numbers(-1.5, -2.5) == -4.0
+    assert add_two_numbers(1e10, 1e10) == 2e10
+    assert add_two_numbers(-1e10, 1e10) == 0
+    print("All test cases passed!")
